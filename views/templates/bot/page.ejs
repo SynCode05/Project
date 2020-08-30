@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <% include('../blocks/head', { title }); %>
+    <body>
+        <h1><%= botUser.username %></h1>
+        <img src="<%= botUser.avatarURL %>" alt="botPicture">
+        <div class="btn">
+            <button onclick="window.location.href='<%= botData.links.inviteURL %>'" id="invite">Invite</button>
+            <button onclick="window.location.href='<%= botData.links.supportURL %>'" id="support">Support</button>
+            <button onclick="window.location.href='<%= botData.links.githubURL %>'" id="github">GitHub</button>
+            <button onclick="window.location.href='<%= botData.links.website %>'" id="website">Website</button>
+        </div>
+    </body>
+</html>

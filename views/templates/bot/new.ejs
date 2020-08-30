@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title><%= title %> </title>
+    </head>
+    <body>
+        <h2>Add your bot.</h2>
+        <strong><span style="color: #ff0000">*</span> = requiered field</strong><br><br>
+        <form action="./new" method="post">
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Client ID <span style="color: #ff0000">*</span></strong></label>
+                <input type="text" name="clientid" placeholder="745202038794616842" /><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Prefix <span style="color: #ff0000">*</span></strong></label>
+                <input type="text" name="prefix" placeholder="!" /><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Library <span style="color: #ff0000">*</span></strong></label>
+                <select name="library">
+                    <option value="null">choose one...</option>
+                    <option value="Discord.js">discord.js</option>
+                    <option value="Eris">eris</option>
+                    <option value="Discord.py">discord.py</option>
+                    <option value="Discord.NET">discord.net</option>
+                    <option value="JDA">JDA</option>
+                </select>
+                <small>Language of your bot.</small><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Tags <span style="color: #ff0000">*</span></strong></label>
+                <select name="tags" multiple>
+                    <option value="Fun">Fun</option>
+                    <option value="Moderation">Moderation</option>
+                    <option value="Anime">Anime</option>
+                    <option value="Web dashboard">Web dashboard</option>
+                    <option value="Minecraft">Minecraft</option>
+                    <option value="Meme">Meme</option>
+                </select><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Other owners </strong></label><br>
+                <input type="text" name="secondaryOwners" /><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Short Description <span style="color: #ff0000">*</span></strong></label>
+                <input type="text" name="shortDescription" placeholder="A moderation bot."/><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Long Description <span style="color: #ff0000">*</span></strong></label>
+                <textarea type="text" name="longDescription" placeholder="A very useful bot which has a lot of moderation functions."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Invite URL [<a href="https://discordapi.com/permissions.html" target="_blank">Generator</a>]</strong></label>
+                <input type="text" name="inviteURL" /><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Support Server Invite <span style="color: #ff0000">*</span></strong></label><br>
+                <input type="text" name="supportURL" /><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>GitHub URL</strong></label>
+                <input type="text" name="githubURL" /><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" style="right: 100%;"><strong>Website URL</strong></label>
+                <input type="text" name="websiteURL" /><br><br>
+            </div>
+
+            <input type="submit" />
+        </form>
+    </body>
+</html>
